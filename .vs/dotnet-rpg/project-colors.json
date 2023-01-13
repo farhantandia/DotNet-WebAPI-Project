@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2c374a47-edcb-4ded-be9e-497ec7e1dc11": {
+      "ProjectGuid": "2c374a47-edcb-4ded-be9e-497ec7e1dc11",
+      "DisplayName": "dotnet-rpg",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
