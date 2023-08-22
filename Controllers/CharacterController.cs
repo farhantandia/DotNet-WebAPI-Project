@@ -49,7 +49,7 @@ namespace dotnet_rpg.Controllers
             {
                 return NotFound(response);
             }
-            return Ok();
+            return Ok(response);
         }
         [HttpDelete("{id}")]
         public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> DeleteCharacter(int id)
@@ -60,6 +60,12 @@ namespace dotnet_rpg.Controllers
                 return NotFound(response);
             }
             return Ok();
+        }
+         [HttpPost("Skill")]
+        public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> AddCharacterSkill(
+            AddCharacterSkillDto newCharacterSkill)
+        {
+            return Ok(await _characterService.AddCharacterSkill(newCharacterSkill));
         }
     }
 
